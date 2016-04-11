@@ -1,0 +1,230 @@
+extends layout
+
+block content
+        section#content.shortcode-item
+          .container
+            .row
+              .col-xs-12.col-sm-7
+                h2 Tab
+                .tab-wrap
+                  .media
+                    .parrent.pull-left
+                      ul.nav.nav-tabs.nav-stacked
+                        li
+                          a.analistic-01(href='#tab1', data-toggle='tab') Responsive Web Design
+                        li.active
+                          a.analistic-02(href='#tab2', data-toggle='tab') Premium Plugin Included
+                        li
+                          a.tehnical(href='#tab3', data-toggle='tab') Predefine Layout
+                        li
+                          a.tehnical(href='#tab4', data-toggle='tab') Our Philosopy
+                        li
+                          a.tehnical(href='#tab5', data-toggle='tab') What We Do?
+                    .parrent.media-body
+                      .tab-content
+                        #tab1.tab-pane
+                          .media
+                            .pull-left
+                              img.img-responsive(src='../img/tab1.png')
+                            .media-body
+                              h4 Adipisicing elit
+                              p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        #tab2.tab-pane.active.in
+                          .media
+                            .pull-left
+                              img.img-responsive(src='../img/tab1.png')
+                            .media-body
+                              h4 Adipisicing elit
+                              p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        #tab3.tab-pane
+                          p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                        #tab4.tab-pane
+                          p
+                            | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words
+                        #tab5.tab-pane
+                          p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                      // /.tab-content
+                    // /.media-body
+                  // /.media
+                // /.tab-wrap
+              // /.col-sm-6
+              .col-xs-12.col-sm-5
+                h2 Accordion
+                .accordion
+                  #accordion1.panel-group
+                    .panel.panel-default
+                      .panel-heading.active
+                        h3.panel-title
+                          a.accordion-toggle(data-toggle='collapse', data-parent='#accordion1', href='#collapseOne1')
+                            | Lorem ipsum dolor sit amet
+                            i.fa.fa-angle-right.pull-right
+                      #collapseOne1.panel-collapse.collapse.in
+                        .panel-body
+                          .media.accordion-inner
+                            .pull-left
+                              img.img-responsive(src='../img/accordion1.png')
+                            .media-body
+                              h4 Adipisicing elit
+                              p
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    .panel.panel-default
+                      .panel-heading
+                        h3.panel-title
+                          a.accordion-toggle(data-toggle='collapse', data-parent='#accordion1', href='#collapseTwo1')
+                            | Lorem ipsum dolor sit amet
+                            i.fa.fa-angle-right.pull-right
+                      #collapseTwo1.panel-collapse.collapse
+                        .panel-body
+                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                    .panel.panel-default
+                      .panel-heading
+                        h3.panel-title
+                          a.accordion-toggle(data-toggle='collapse', data-parent='#accordion1', href='#collapseThree1')
+                            | Lorem ipsum dolor sit amet
+                            i.fa.fa-angle-right.pull-right
+                      #collapseThree1.panel-collapse.collapse
+                        .panel-body
+                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                  // /#accordion1
+            // /.row
+          // /.container
+        // /#content
+        section.pricing-area.shortcode-item
+          .container
+            h2 Pricing Table
+            .row.text-center
+              .col-sm-4.plan.price-one.wow.fadeInDown
+                ul
+                  li.heading-one
+                    h3 Start Up
+                    span $6/Month
+                  li 5 Gb Disk Space
+                  li 1GB Dadicated Ram
+                  li 10 Addon Domain
+                  li 10 Email Account
+                  li 24/7 Support
+                  li.plan-action
+                    a.btn.btn-primary(href='') Sign up
+              .col-sm-4.plan.price-two.wow.fadeInDown
+                ul
+                  li.heading-two
+                    h3 Standerd
+                    span $12/Month
+                  li 10 Gb Disk Space
+                  li 2GB Dadicated Ram
+                  li 20 Addon Domain
+                  li 20 Email Account
+                  li 24/7 Support
+                  li.plan-action
+                    a.btn.btn-primary(href='') Sign up
+              .col-sm-4.plan.price-three.wow.fadeInDown
+                img(src='../img/ribon_one.png')
+                ul
+                  li.heading-three
+                    h3 Premium
+                    span $24/Month
+                  li 50 Gb Disk Space
+                  li 8GB Dadicated Ram
+                  li Unlimited Addon Domain
+                  li Unlimited Email Account
+                  li 24/7 Support
+                  li.plan-action
+                    a.btn.btn-primary(href='') Sign up
+        // /pricing_area
+        section#recent-works.shortcode-item
+          .container
+            h2 Gallery
+            .row
+              .col-xs-12.col-sm-4.col-md-3
+                .recent-work-wrap
+                  img.img-responsive(src='../img/portfolio/recent/item1.png', alt='')
+                  .overlay
+                    .recent-work-inner
+                      h3
+                        a(href='#') Business theme
+                      p There are many variations of passages of Lorem Ipsum available, but the majority
+                      a.preview(href='../img/portfolio/full/item1.png', rel='prettyPhoto')
+                        i.fa.fa-eye
+                        |  View
+              .col-xs-12.col-sm-4.col-md-3
+                .recent-work-wrap
+                  img.img-responsive(src='../img/portfolio/recent/item2.png', alt='')
+                  .overlay
+                    .recent-work-inner
+                      h3
+                        a(href='#') Business theme
+                      p There are many variations of passages of Lorem Ipsum available, but the majority
+                      a.preview(href='../img/portfolio/full/item2.png', rel='prettyPhoto')
+                        i.fa.fa-eye
+                        |  View
+              .col-xs-12.col-sm-4.col-md-3
+                .recent-work-wrap
+                  img.img-responsive(src='../img/portfolio/recent/item3.png', alt='')
+                  .overlay
+                    .recent-work-inner
+                      h3
+                        a(href='#') Business theme 
+                      p There are many variations of passages of Lorem Ipsum available, but the majority
+                      a.preview(href='../img/portfolio/full/item3.png', rel='prettyPhoto')
+                        i.fa.fa-eye
+                        |  View
+              .col-xs-12.col-sm-4.col-md-3
+                .recent-work-wrap
+                  img.img-responsive(src='../img/portfolio/recent/item4.png', alt='')
+                  .overlay
+                    .recent-work-inner
+                      h3
+                        a(href='#') Business theme 
+                      p There are many variations of passages of Lorem Ipsum available, but the majority
+                      a.preview(href='../img/portfolio/full/item4.png', rel='prettyPhoto')
+                        i.fa.fa-eye
+                        |  View
+              .col-xs-12.col-sm-4.col-md-3
+                .recent-work-wrap
+                  img.img-responsive(src='../img/portfolio/recent/item5.png', alt='')
+                  .overlay
+                    .recent-work-inner
+                      h3
+                        a(href='#') Business theme
+                      p There are many variations of passages of Lorem Ipsum available, but the majority
+                      a.preview(href='../img/portfolio/full/item5.png', rel='prettyPhoto')
+                        i.fa.fa-eye
+                        |  View
+              .col-xs-12.col-sm-4.col-md-3
+                .recent-work-wrap
+                  img.img-responsive(src='../img/portfolio/recent/item6.png', alt='')
+                  .overlay
+                    .recent-work-inner
+                      h3
+                        a(href='#') Business theme 
+                      p There are many variations of passages of Lorem Ipsum available, but the majority
+                      a.preview(href='../img/portfolio/full/item6.png', rel='prettyPhoto')
+                        i.fa.fa-eye
+                        |  View
+              .col-xs-12.col-sm-4.col-md-3
+                .recent-work-wrap
+                  img.img-responsive(src='../img/portfolio/recent/item7.png', alt='')
+                  .overlay
+                    .recent-work-inner
+                      h3
+                        a(href='#') Business theme 
+                      p There are many variations of passages of Lorem Ipsum available, but the majority
+                      a.preview(href='../img/portfolio/full/item7.png', rel='prettyPhoto')
+                        i.fa.fa-eye
+                        |  View
+              .col-xs-12.col-sm-4.col-md-3
+                .recent-work-wrap
+                  img.img-responsive(src='../img/portfolio/recent/item8.png', alt='')
+                  .overlay
+                    .recent-work-inner
+                      h3
+                        a(href='#') Business theme 
+                      p There are many variations of passages of Lorem Ipsum available, but the majority
+                      a.preview(href='../img/portfolio/full/item8.png', rel='prettyPhoto')
+                        i.fa.fa-eye
+                        |  View
+        // /#portfolio
